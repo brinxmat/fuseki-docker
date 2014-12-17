@@ -12,7 +12,7 @@ Cloning this repo will provide you with a simple RDF workbench based on Jena Fus
 term$ make up_fuseki
 term$ make build
 term$ make run_fuseki
-``
+```
 
 ##Install Vagrant
 
