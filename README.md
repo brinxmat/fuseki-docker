@@ -39,6 +39,11 @@ Run fuseki and open a web browser
 ```
 term$ make run_fuseki
 ```
+###Running the UI
+If you already have a running docker, but no UI, you can run
+```
+term$ make ui
+```
 ##Using Fuseki
 
 Click [Control panel], then select the /ds dataset and you're good to go.
