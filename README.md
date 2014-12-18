@@ -39,6 +39,10 @@ Run fuseki and open a web browser
 ```
 term$ make run_fuseki
 ```
-#Loading data
+##Using Fuseki
+
+Click [Control panel], then select the /ds dataset and you're good to go.
+
+###Loading data
 
 If you have data you want to load into the triplestore, just put this into the directory you cloned your project into. It will be available in /vagrant
