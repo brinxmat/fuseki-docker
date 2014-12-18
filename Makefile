@@ -16,7 +16,7 @@ build:                                                     ## Build the docker i
 	vagrant ssh vm-fuseki -c "sudo docker build -t brinxmat/fuseki-docker:latest /vagrant | tee -a build.log"
 
 ui:                                                        ## Open UI
-	vagrant ssh vm-fuseki -c "CID=IP=$(docker inspect $CID | grep IPAddress | cut -d '"' -f 4) | sudo apt-get install -y firefox && firefox http://127.0.0.1:3030"
+	vagrant ssh vm-fuseki -c "sudo apt-get install -y firefox && firefox http://127.0.0.1:3030"
 
 load_docker:                                               ## Load the latest docker image
 	vagrant ssh vm-fuseki -c "sudo nohup docker run -t -p 3030:3030 brinxmat/fuseki-docker:latest 2>&1 &"
